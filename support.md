@@ -43,7 +43,7 @@ Not through DarkWalls. This is a tradeoff we made for privacy — there's no acc
 
 ### Why does the download button ask me to wait a few seconds?
 
-DarkWalls is free. A short 5-second interstitial before the first few downloads helps keep the app independent. If you'd rather skip the pause entirely, you can tip the developer through **Settings → Support the Developer**. Any tip amount, through Buy Me a Coffee / Ko-fi / PayPal, disables ad interruptions on your device.
+DarkWalls is free. A short 5-second interstitial before the first few downloads helps keep the app independent. If you'd rather skip the pause entirely, you can tip the developer through **Settings → Support the Developer**. Any tip amount, through Ko-fi or PayPal, disables ad interruptions on your device.
 
 ### I tipped but ads are still showing
 

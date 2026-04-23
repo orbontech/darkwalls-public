@@ -11,10 +11,10 @@ DarkWalls ("the app", "we", "us") is a wallpaper app published by Orbon Tech. Th
 
 - We **do not** create user accounts.
 - We **do not** collect any identifier that can be linked to you personally.
-- We **do not** show third-party advertising at this time.
+- We **do** show third-party advertising (Google AdMob Rewarded Interstitial) before each wallpaper save, unless you have supported the developer via an in-app tip of USD $5 or more — in which case ads are disabled on your device.
 - We **do not** use analytics, telemetry, or crash-reporting SDKs.
-- Everything you save in the app (favorites, recent searches, download counter) is stored **on your device** and never leaves it.
-- The only data that leaves your device is anonymous: the ID of a wallpaper you chose to download, so we can show popularity counts.
+- Everything you save in the app (favorites, recent searches, download counter, supporter flag) is stored **on your device** and never leaves it.
+- The only data that leaves your device and relates to you is the advertising identifier (IDFA on iOS / AAID on Android), shared with Google AdMob only if you grant App Tracking Transparency permission. If you deny, AdMob serves non-personalized ads.
 
 ---
 
@@ -61,9 +61,25 @@ Our backend is hosted on Cloudflare Workers. Cloudflare automatically logs the I
 
 ## 5. Advertising
 
-At the time this policy takes effect, **no advertising SDK is active in the app**. The Google Mobile Ads SDK is shipped as a dependency but is not initialized anywhere in the codebase, so it neither runs nor collects an advertising identifier.
+DarkWalls uses **Google AdMob** to serve a short Rewarded Interstitial advertisement immediately before each wallpaper save. This is how the app stays free. You can **remove ads permanently** on your device by tipping the developer USD $5 or more via Ko-fi or PayPal and confirming in Settings; this sets a local flag that bypasses ad loading for all future saves.
 
-If we ever enable advertising, this policy will be updated to disclose the advertising partner, what identifier they collect, and where their own policy lives. The app will request `App Tracking Transparency` permission at that time per Apple's rules; you can decline and continue using DarkWalls without degradation.
+### What AdMob receives
+
+When an ad is served, Google's AdMob SDK collects standard advertising-SDK information that Google then processes:
+
+- **Advertising identifier** — IDFA on iOS, Android Advertising ID on Android. On iOS, the SDK only receives this if you grant permission on the App Tracking Transparency prompt. If you deny, non-personalized ads are shown instead (same UX, lower revenue; no reduction in functionality).
+- **Coarse location inferred from IP**, device model, OS version, ad unit ID, the user's app session in progress, and interaction events with the ad itself (impression, click, completion).
+- Google AdMob's own privacy policy governs this data: https://policies.google.com/privacy
+
+We do not directly see or receive the advertising identifier. It flows from your device to AdMob without passing through our backend.
+
+### App Tracking Transparency
+
+On iOS 14.5+, the app displays Apple's ATT permission sheet on first launch. The text of the prompt and its consequences match this policy. You may change your choice at any time in **iOS Settings → Privacy & Security → Tracking → DarkWalls**.
+
+### Removing ads
+
+Tip the developer $5 or more via the Support links in Settings, then tap "Yes, unlock" on the in-app confirmation sheet. The supporter flag persists on your device and never leaves it. Reinstalling the app clears the flag (there is no server-side linkage); if that happens you are welcome to contact us at privacy@orbontech.com.
 
 ---
 
