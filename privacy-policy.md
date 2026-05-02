@@ -11,9 +11,9 @@ DarkWalls ("the app", "we", "us") is a wallpaper app published by Orbon Tech. Th
 
 - We **do not** create user accounts.
 - We **do not** collect any identifier that can be linked to you personally.
-- We **do** show third-party advertising (Google AdMob Rewarded Interstitial) before each wallpaper save, unless you have supported the developer via an in-app tip of USD $5 or more — in which case ads are disabled on your device.
+- We **do** show third-party advertising (Google AdMob Rewarded Interstitial) before each wallpaper save.
 - We **do not** use analytics, telemetry, or crash-reporting SDKs.
-- Everything you save in the app (favorites, recent searches, download counter, supporter flag) is stored **on your device** and never leaves it.
+- Everything you save in the app (favorites, recent searches, download counter) is stored **on your device** and never leaves it.
 - The only data that leaves your device and relates to you is the advertising identifier (IDFA on iOS / AAID on Android), shared with Google AdMob only if you grant App Tracking Transparency permission. If you deny, AdMob serves non-personalized ads.
 
 ---
@@ -27,7 +27,6 @@ The following items are stored locally using your device's standard app storage 
 | Favorites | Wallpaper IDs you've bookmarked inside the app. |
 | Download counter | Count of how many wallpapers you've saved (used to throttle an occasional interstitial). |
 | Recent searches | Up to six most-recent search terms you've typed, for quick re-use. |
-| Supporter flag | A boolean indicating whether you've tipped the developer via an in-app link, so we can disable ad interruptions for you. |
 
 Uninstalling the app permanently deletes all of the above. There is no way for us, or anyone else, to retrieve it.
 
@@ -61,7 +60,7 @@ Our backend is hosted on Cloudflare Workers. Cloudflare automatically logs the I
 
 ## 5. Advertising
 
-DarkWalls uses **Google AdMob** to serve a short Rewarded Interstitial advertisement immediately before each wallpaper save. This is how the app stays free. You can **remove ads permanently** on your device by tipping the developer USD $5 or more via Ko-fi or PayPal and confirming in Settings; this sets a local flag that bypasses ad loading for all future saves.
+DarkWalls uses **Google AdMob** to serve a short Rewarded Interstitial advertisement immediately before each wallpaper save. This is how the app stays free.
 
 ### What AdMob receives
 
@@ -76,10 +75,6 @@ We do not directly see or receive the advertising identifier. It flows from your
 ### App Tracking Transparency
 
 On iOS 14.5+, the app displays Apple's ATT permission sheet on first launch. The text of the prompt and its consequences match this policy. You may change your choice at any time in **iOS Settings → Privacy & Security → Tracking → DarkWalls**.
-
-### Removing ads
-
-Tip the developer $5 or more via the Support links in Settings, then tap "Yes, unlock" on the in-app confirmation sheet. The supporter flag persists on your device and never leaves it. Reinstalling the app clears the flag (there is no server-side linkage); if that happens you are welcome to contact us at privacy@orbontech.com.
 
 ---
 

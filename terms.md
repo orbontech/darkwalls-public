@@ -36,11 +36,9 @@ If you believe a wallpaper infringes your copyright, write to privacy@orbontech.
 
 ---
 
-## 3. Developer tips and in-app links
+## 3. Advertising
 
-DarkWalls is free. Inside the app's Settings, you will find links to third-party tip platforms (Ko-fi, PayPal). These are optional. Any transaction on those platforms is governed by that platform's own terms; Orbon Tech is not a party to it.
-
-If you tip via any of those links, the app marks a local flag that disables ad interruptions. That's a courtesy, not a contractual guarantee; if the app's ad policy changes in the future we may revise how the flag is honored, but we will not retroactively degrade the experience for anyone who has tipped.
+DarkWalls is free and supported by short Rewarded Interstitial ads from Google AdMob, shown immediately before each wallpaper save. Ad behavior, the App Tracking Transparency prompt, and the data Google receives are described in the Privacy Policy.
 
 ---
 

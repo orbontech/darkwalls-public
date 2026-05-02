@@ -43,11 +43,7 @@ Not through DarkWalls. This is a tradeoff we made for privacy — there's no acc
 
 ### Why does the download button ask me to wait a few seconds?
 
-DarkWalls is free. A short 5-second interstitial before the first few downloads helps keep the app independent. If you'd rather skip the pause entirely, you can tip the developer through **Settings → Support the Developer**. Any tip amount, through Ko-fi or PayPal, disables ad interruptions on your device.
-
-### I tipped but ads are still showing
-
-Open the app at least once after tipping so the "supporter" flag can be written. If it still hasn't kicked in, email **privacy@orbontech.com** with the platform you tipped through and we'll sort it out manually.
+DarkWalls is free. A short Rewarded Interstitial ad before each save is what keeps the app independent. Watch the ad to completion and the wallpaper will save right after.
 
 ### How do I search for a specific mood or color?
 
@@ -83,7 +79,7 @@ Effectively nothing that identifies you. No accounts, no tracking identifiers, n
 
 ### How do I delete everything?
 
-Uninstall the app. Every piece of locally-stored data (favorites, download counter, recent searches, supporter flag) is removed with the app. We have nothing on our servers to delete because we never had anything in the first place.
+Uninstall the app. Every piece of locally-stored data (favorites, download counter, recent searches) is removed with the app. We have nothing on our servers to delete because we never had anything in the first place.
 
 ---
 
